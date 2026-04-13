@@ -3,6 +3,10 @@ let button = document.getElementById("btn")
 let list = document.getElementById("listContainer")
 
         button.addEventListener('click',()=>{
+            if(input.value === ""){
+                alert("Write something")
+                return;
+            }
             let li = document.createElement("li");
             li.innerHTML = input.value; 
             list.appendChild(li);
